@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.developerom.chatgloballllllly">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".OutGoingInvitationActivity"></activity>
+        <activity android:name=".IncomingInvitationActivity" />
+        <activity
+            android:name=".GroupChatActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AboutUsActivity" />
+        <activity android:name=".ContactUsActivity" />
+        <activity android:name=".PrivacyPolicyActivity" />
+        <activity
+            android:name=".DrawingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TechnologyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MusicActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MotivationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EnterTainmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AnimalActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TrendingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SportsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NatureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ChatActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WallpaperActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GroupChatAskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SetUpProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OTPActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ActivityPhoneNumberActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2746280336073356~3622141813" />
+
+        <service
+            android:name=".Notifications.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,170 @@
+package com.developerom.chatgloballllllly;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+
+import android.os.Bundle;
+
+import com.developerom.chatgloballllllly.databinding.ActivityMusicBinding;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MusicActivity extends AppCompatActivity {
+
+    ActivityMusicBinding binding;
+    List<customItems> itemsList;
+    RecyclerViewAdapter recyclerViewAdapter;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        binding = ActivityMusicBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
+        getSupportActionBar().setTitle("Music");
+        binding.recyclerview.setHasFixedSize(true);
+        binding.recyclerview.setLayoutManager(new GridLayoutManager(this,3));
+        itemsList = new ArrayList<>();
+
+        itemsList.add(new customItems("https://wallpaperaccess.com/full/2178320.jpg"));
+        itemsList.add(new customItems("https://cdn.wallpapersafari.com/77/67/R3EBHF.jpg"));
+        itemsList.add(new customItems("https://uhdwallpapers.org/uploads/converted/18/03/11/dj-let-the-music-play-1080x1920_66494-mm-90.jpg"));
+        itemsList.add(new customItems("https://cdn.wallpapersafari.com/73/3/Hkgm1q.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/d8/38/26/d83826d786528d59bce7a3e3138b3fee.jpg"));
+        itemsList.add(new customItems("https://wallpaperaccess.com/full/1162645.jpg"));
+        itemsList.add(new customItems("https://wallpaperaccess.com/full/1162959.jpg"));
+        itemsList.add(new customItems("https://wallpapercave.com/wp/wp4826675.jpg"));
+        itemsList.add(new customItems("https://wallpaperaccess.com/full/2792314.png"));
+        itemsList.add(new customItems("https://wallpapercave.com/wp/wp5575562.jpg"));
+        itemsList.add(new customItems("https://cdn.wallpapersafari.com/46/51/VZmM4p.jpg"));
+        itemsList.add(new customItems("https://www.teahub.io/photos/full/59-594706_music-12-android-wallpaper.jpg"));
+        itemsList.add(new customItems("https://cutewallpaper.org/21/music-hd-wallpapers-1080p/art-Music-wallpapers-1920x1080-Full-HD-1080p-desktop-.jpg"));
+        itemsList.add(new customItems("https://www.mwallpapers.com/photos/celebrities/music/music-wallpaper-backgrounds-android-iphone-desktop-hd-backgrounds-wallpapers-1080p-4khd-wallpapers-desktop-background-android-iphone-1080p-4k-tymie.jpg?v=1614857899"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/d6/0e/e1/d60ee1d56cd657de2b8be925779343f1.jpg"));
+        itemsList.add(new customItems("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRixJZOJv8QAcw8Br46VbepRiPoudaHPMNkCw&usqp=CAU"));
+        itemsList.add(new customItems("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV1BGWIkbaC1pnGJyoxTtWXrzhFN4AlwkY6g&usqp=CAU"));
+        itemsList.add(new customItems("https://cdn.wallpapersafari.com/66/35/I0Bwl5.jpg"));
+        itemsList.add(new customItems("https://www.wallpapertip.com/wmimgs/175-1755146_1080-x-1920-pixels-wallpapers-music.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/68/05/a5/6805a5197757cd261141792eff1966fe.jpg"));
+        itemsList.add(new customItems("https://coolwallpapers.me/picsup/6116175-music-life-comments-msg.jpg"));
+        itemsList.add(new customItems("https://wallpaperaccess.com/full/1791036.jpg"));
+        itemsList.add(new customItems("https://cutewallpaper.org/21/music-wallpapers-for-android/Music-100-Android-wallpaper-Android-HD-wallpapers.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/3f/b5/06/3fb506b196c2393fa4ba11e4b403e6d3.jpg"));
+        itemsList.add(new customItems("https://uhdwallpapers.org/uploads/converted/18/04/22/music-plays-on-the-iphone-earphones-1080x1920_95455-mm-90.jpg"));
+        itemsList.add(new customItems("https://godfatherstyle.com/wp-content/uploads/2016/02/MP3-Player-Pebbles-Music-Lockscreen-iPhone-6-Plus-HD-Wallpaper..jpg"));
+        itemsList.add(new customItems("https://www.teahub.io/photos/full/23-235711_music-18-android-wallpaper-microphone-wallpaper-iphone.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/55/f0/6b/55f06b1a0c99120df7b8b433ea41fdb5.jpg"));
+        itemsList.add(new customItems("https://www.99images.com/photos/wallpapers/music/music-productionandroid-iphone-desktop-hd-backgrounds-wallpapers-1080p-4k-ounrn.jpg?v=1614823389"));
+        itemsList.add(new customItems("https://images.hdqwalls.com/download/marshmello-music-4k-6c-1080x1920.jpg"));
+        itemsList.add(new customItems("https://wallpapercave.com/wp/wp5240040.jpg"));
+        itemsList.add(new customItems("https://wallpaperaccess.com/full/2792365.jpg"));
+        itemsList.add(new customItems("https://cdn.statically.io/img/lh3.googleusercontent.com/proxy/Nhsz84JxKbnccltZG6OfdgOPJ67jf1th9Ic2fFy80QisbZzkfR7K3EJA-8PHf51PT51zAHJTIvgn_iGOVBcJazn8HsjB-2r73ovXz_2jUGDkfAq0ShBzHyAptPfb6EUSi-AkcNAet2cdPQ=s0-d"));
+        itemsList.add(new customItems("http://wallpapers.net/house-music-dj-decks-hd-wallpaper/download/1080x1920.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/82/64/9f/82649f9a06ab953578d33ee5ca0fd50e.jpg"));
+        itemsList.add(new customItems("https://androidhdwallpapers.com/media/uploads/2016/08/Music-iPhone-6-Plus-Wallpaper-33.jpg"));
+        itemsList.add(new customItems("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3znLOD0LQ1sd3e1nlg_mNgXhecpazdFnJ8g&usqp=CAU"));
+        itemsList.add(new customItems("https://coolwallpapers.me/picsup/6088543-alan-walker-music-4k-5k-hd-dark-black.jpg"));
+        itemsList.add(new customItems("https://bestwallpapers.in/wp-content/uploads/2018/07/guitar-music-playing-monochrome-4k-wallpaper-1080x1920.jpg"));
+        itemsList.add(new customItems("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgWI7g1-xPgvRRZoPp8adByKkAylQXuIVUDA&usqp=CAU"));
+        itemsList.add(new customItems("https://iphonewalls.net/wp-content/uploads/2016/08/Funny%20Music%20Headphones%20Player%20Buds%20iPhone%206+%20HD%20Wallpaper.jpg"));
+        itemsList.add(new customItems("https://www.wallpapertip.com/wmimgs/199-1994718_music-keyboard-wallpaper-hd-for-mobile.jpg"));
+        itemsList.add(new customItems("https://coolwallpapers.me/picsup/6110613-music-typography.jpg"));
+        itemsList.add(new customItems("https://www.wallpaperuse.com/wallp/59-595463_m.jpg"));
+        itemsList.add(new customItems("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzHM2OseHNcxuBtNtxScoP3JHSZFiP8GyUbw&usqp=CAU"));
+        itemsList.add(new customItems("https://wallpaperaccess.com/full/1162760.jpg"));
+        itemsList.add(new customItems("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1IIjnE9zmCHEO3IA8SQ_dhbz7FTasBOA2hQ&usqp=CAU"));
+        itemsList.add(new customItems("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkV0ACJXCdfsldVc9dRItVYsiUR15KvQEBpw&usqp=CAU"));
+        itemsList.add(new customItems("https://lh3.googleusercontent.com/proxy/d4jcszkGg25-hr5Sx4-BFmHC-UB9EAq9VAEgx4he5D7bTj7AP6DUPhELPK863xflgKKnlFOp_gDpCp1lTRPYzIiWhK70PbymyMJU5n_LZCISfGc5t4M0EpsFM2POvTa0cmyEF0g"));
+        itemsList.add(new customItems("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDmG9JVilmK2xy-3vk4c6kqriJAlmQCtKOWA&usqp=CAU"));
+        itemsList.add(new customItems("https://www.mwallpapers.com/photos/celebrities/music/music-studio-android-iphone-desktop-hd-backgrounds-wallpapers-1080p-4khd-wallpapers-desktop-background-android-iphone-1080p-4k-xwzwl.jpg?v=1614872923"));
+        itemsList.add(new customItems("https://getwallpapers.com/wallpaper/full/6/8/0/1376917-music-sheet-wallpaper-1080x1920-ios.jpg"));
+        itemsList.add(new customItems("https://www.wallpapertip.com/wmimgs/59-595408_music-118-android-wallpaper-iphone-wallpaper-guitar.jpg"));
+        itemsList.add(new customItems("https://coolwallpapers.me/picsup/6082189-marshmello-dj-music-hd-4k-behance-art.jpg"));
+        itemsList.add(new customItems("https://images.hdqwalls.com/download/monstercat-music-hd-ej-1080x1920.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/62/30/66/623066d036ecca6c8927a0883a5d938f.jpg"));
+        itemsList.add(new customItems("https://coolwallpapers.me/picsup/6076111-marshmello-music-hd-4k-dj.jpg"));
+        itemsList.add(new customItems("https://img.wallpapersafari.com/phone/1080/1920/43/79/NhRLBd.jpg"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/headphones_apple_music_133756_1080x1920.jpg"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/mixing_console_installation_music_114981_1080x1920.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/f5/27/7c/f5277cf35f096f28d9b791d5ab742dfe.jpg"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/headphones_equalizer_music_191536_1080x1920.jpg"));
+        itemsList.add(new customItems("https://wallpapercave.com/wp/wp4617151.png"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/headphones_music_audio_115572_1080x1920.jpg"));
+        itemsList.add(new customItems("https://images.hdqwalls.com/download/music-heartbeat-hk-1080x1920.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/08/1d/bd/081dbd55d844862a02117e07da730b38.jpg"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/headphones_device_music_172113_1080x1920.jpg"));
+        itemsList.add(new customItems("https://www.wallpapertip.com/wmimgs/68-680594_musical-keyboard.jpg"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/guitar_musical_instrument_headphones_166326_1080x1920.jpg"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/headphones_audio_music_126653_1080x1920.jpg"));
+        itemsList.add(new customItems("https://coolwallpapers.me/picsup/6084929-marshmello-dog-music-hd.jpg"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/microphone_orange_music_168286_1080x1920.jpg"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/jazz_music_musical_instrument_145695_1080x1920.jpg"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/piano_keys_bw_161438_1080x1920.jpg"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/notes_music_light_135949_1080x1920.jpg"));
+        itemsList.add(new customItems("https://coolwallpapers.me/picsup/6088298-alan-walker-music-hd-4k-5k.jpg"));
+        itemsList.add(new customItems("https://wallpaperaccess.com/full/2792317.jpg"));
+        itemsList.add(new customItems("https://coolwallpapers.me/picsup/6081969-alan-walker-dj-music-hd-hoodie.jpg"));
+        itemsList.add(new customItems("https://wallpaperaccess.com/full/2065874.jpg"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/headphones_black_music_142082_1080x1920.jpg"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/microphone_sound_music_108048_1080x1920.jpg"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/guitar_piano_musical_instrument_148841_1080x1920.jpg"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/headphones_music_heart_121360_1080x1920.jpg"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/hands_headphones_music_136123_1080x1920.jpg"));
+        itemsList.add(new customItems("https://lh3.googleusercontent.com/proxy/YwPQExvETGUWhoCwJ8mywo6mYMeXwBE6_ZczZwM0A84XErki7kVF6fNqafFw9JjfdMzESFvF2To-QkpO4kt0CaH3CVlW_tWCzJ5NyaFuPLcb_1wCV898AmEd2tj1aV9a008wV7gUBeWcMQ"));
+        itemsList.add(new customItems("https://cdn.wallpapersafari.com/9/7/TjDNSZ.jpg"));
+        itemsList.add(new customItems("https://b3-positive.com/wp-content/uploads/2020/05/Music-Quotes-Wallpaper-8.png"));
+        itemsList.add(new customItems("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeXOy85_cR46osY3YYScrO_KTaKkVIzNNVxw&usqp=CAU"));
+        itemsList.add(new customItems("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOuGkJ5ETJFkxVTeQ6eNECWS5t3eA60JIRcQ&usqp=CAU"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/5b/97/69/5b9769823c9cd575f4276af642a47b1d.png"));
+        itemsList.add(new customItems("https://media.nojoto.com/content/media/321163/2020/04/feed/972fb14963b766cedc2cbeb42e36810b/972fb14963b766cedc2cbeb42e36810b_default.jpg"));
+        itemsList.add(new customItems("https://dogtrainingobedienceschool.com/pic/282653_full-photography-quotes-ed-sheeran-ed-sheeran-lyrics-wallpaper-85-images.jpg"));
+        itemsList.add(new customItems("https://wallpaperaccess.com/full/2792365.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/cb/d0/9a/cbd09ad638697a22ed70d79705f76a8e.jpg"));
+        itemsList.add(new customItems("https://wallpapercave.com/wp/wp2362165.jpg"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/drum_kit_instrument_musical_instrument_160881_1080x1920.jpg"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/piano_hands_vintage_music_bw_113804_1080x1920.jpg"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/microphone_drums_music_161742_1080x1920.jpg"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/headphones_music_audio_135020_1080x1920.jpg"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/equipment_sound_recording_music_160735_1080x1920.jpg"));
+        itemsList.add(new customItems("https://coolwallpapers.me/picsup/6077176-deadmau5-music-dj-hd-4k-artwork.jpg"));
+        itemsList.add(new customItems("https://wallpapercave.com/wp/wp5575286.jpg"));
+        itemsList.add(new customItems("https://cdn.wallpapersafari.com/71/20/wS25sr.jpg"));
+        itemsList.add(new customItems("https://www.wallpapertip.com/wmimgs/11-111521_music-wallpapers-for-iphone-6-plus-music-lovers.jpg"));
+        itemsList.add(new customItems("https://wallpaperaccess.com/full/2792317.jpg"));
+        itemsList.add(new customItems("https://image.winudf.com/v2/image1/Y29tLm1vYmlsZXVuaXZlcnNpdHkubXVzaWNfc2NyZWVuXzBfMTU0MzI5MzY5OF8wNTY/screen-0.jpg?fakeurl=1&type=.jpg"));
+        itemsList.add(new customItems("https://image.winudf.com/v2/image1/Y29tLm1vYmlsZXVuaXZlcnNpdHkubXVzaWNfc2NyZWVuXzRfMTU0MzI5MzcwMl8wODI/screen-4.jpg?fakeurl=1&type=.jpg"));
+        itemsList.add(new customItems("https://www.teahub.io/photos/full/19-191106_fender-music-guitar-iphone-6-wallpapers-hd-fender.jpg"));
+        itemsList.add(new customItems("https://bestwallpapers.in/wp-content/uploads/2018/04/violin-wooden-music-instrument-4k-wallpaper-1080x1920.jpg"));
+        itemsList.add(new customItems("https://mocah.org/uploads/posts/528140-music-high-definition.jpg"));
+        itemsList.add(new customItems("https://www.99images.com/photos/wallpapers/music/dermot-kennedy%20android-iphone-desktop-hd-backgrounds-wallpapers-1080p-4k-uyjmt.jpg?v=1616435891"));
+        itemsList.add(new customItems("https://www.wallpapertip.com/wmimgs/160-1609255_yamaha-music.jpg"));
+        itemsList.add(new customItems("https://wallpaperforu.com/wp-content/uploads/2021/04/Wallpaper-Post-Malone-Music-Hd-4k-Rapper-4615x3470px211080x1920.jpg"));
+        itemsList.add(new customItems("https://i1.wp.com/getwallpapers.com/wallpaper/full/6/b/8/1126789-gorgerous-hd-guitar-wallpaper-1080x1920-for-macbook.jpg"));
+        itemsList.add(new customItems("https://mfiles.alphacoders.com/708/708541.jpg"));
+        itemsList.add(new customItems("https://i0.wp.com/getwallpapers.com/wallpaper/full/0/2/d/495563.jpg"));
+        itemsList.add(new customItems("https://thewallpaper.net/wp-content/uploads/2020/02/music-hd-wallpapers.jpg"));
+        itemsList.add(new customItems("https://mocah.org/uploads/posts/275474-wallpaper-1080-1920.jpg"));
+        itemsList.add(new customItems("https://wallpapertag.com/wallpaper/full/1/1/2/696630-gorgerous-best-music-wallpapers-1080x1920-windows-7.jpg"));
+        itemsList.add(new customItems("https://www.teahub.io/photos/full/41-415340_3d-music-violin-iphone-6-wallpapers-hd-3d.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/36/e3/40/36e340ddfae0d37e6e5ed1238a95b4e0.jpg"));
+        itemsList.add(new customItems("https://www.teahub.io/photos/full/122-1220522_trumpet-instrument-music-monochrome-black-and-white-trumpet.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/d2/44/a9/d244a97a32ed51cd21cb87fa516152b5.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/dd/5a/30/dd5a302e9bacc555af326aaa5e670143.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/c2/cc/72/c2cc72896faa1e8e75fdc682b3462a55.jpg"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/guitar_musical_instrument_headphones_166326_1080x1920.jpg"));
+        itemsList.add(new customItems("https://www.99images.com/photos/wallpapers/music/music-studioandroid-iphone-desktop-hd-backgrounds-wallpapers-1080p-4k-4bzq8.jpg?v=1614872588"));
+        itemsList.add(new customItems("https://coolwallpapers.me/picsup/6071801-marshmello-music-hd-4k.jpg"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/hands_headphones_music_136123_1080x1920.jpg"));
+        itemsList.add(new customItems("https://androidhdwallpapers.com/media/uploads/2016/08/Music-iPhone-6-Plus-Wallpaper-119.jpg"));
+        itemsList.add(new customItems("https://www.teahub.io/photos/full/179-1793331_70-music-iphone-wallpapers-for-music-manias-data.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/95/84/00/958400125c6a7577e67fff18de67b322.jpg"));
+        itemsList.add(new customItems("https://androidhdwallpapers.com/media/uploads/2016/08/Music-iPhone-6-Plus-Wallpaper-108.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/0a/95/41/0a9541b5a94792c5147450d980242fb6.jpg"));
+        itemsList.add(new customItems("https://cdn.statically.io/img/i.pinimg.com/originals/78/59/db/7859dba8c920ed71e6c4b073fc1c9450.jpg"));
+
+        recyclerViewAdapter = new RecyclerViewAdapter(itemsList,this);
+        binding.recyclerview.setAdapter(recyclerViewAdapter);
+
+    }
+}

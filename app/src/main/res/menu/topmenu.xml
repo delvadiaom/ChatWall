@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:title="Search"
+    android:id="@+id/search"
+    android:icon="@drawable/ic_baseline_search_24"
+    app:showAsAction="always"
+    app:actionViewClass="android.widget.SearchView"/>
+<item android:title="My Profile"
+    android:id="@+id/myprofile"/>
+<item android:title="Global Group Chat"
+    android:id="@+id/global"/>
+<item android:title="Mobile WallPapers"
+    android:id="@+id/mobilewallpapers"/>
+<item android:title="Settings"
+    android:id="@+id/settings"/>
+
+
+</menu>

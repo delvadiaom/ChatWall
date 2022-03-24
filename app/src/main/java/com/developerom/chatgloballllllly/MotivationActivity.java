@@ -1,0 +1,176 @@
+package com.developerom.chatgloballllllly;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+
+import android.os.Bundle;
+
+import com.developerom.chatgloballllllly.databinding.ActivityMotivationBinding;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MotivationActivity extends AppCompatActivity {
+
+    ActivityMotivationBinding binding;
+    List<customItems> itemsList;
+    RecyclerViewAdapter recyclerViewAdapter;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        binding = ActivityMotivationBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
+        getSupportActionBar().setTitle("Motivation");
+        binding.recyclerview.setHasFixedSize(true);
+        binding.recyclerview.setLayoutManager(new GridLayoutManager(this,3));
+        itemsList = new ArrayList<>();
+
+        itemsList.add(new customItems("https://wallpaperaccess.com/full/848085.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/9f/25/53/9f2553607c4d7458b6f03b17cbdbe370.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/27/89/cf/2789cfcb7a13756adec2724cb422b6bc.jpg"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/inscription_quote_motivation_127898_1080x1920.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/c1/9b/16/c19b167857e45022463169c209b33b15.jpg"));
+        itemsList.add(new customItems("https://wallpaperaccess.com/full/1389788.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/aa/cd/94/aacd940c95539a353f46b00bf091c4e0.jpg"));
+        itemsList.add(new customItems("https://www.wallpapertip.com/wmimgs/13-136876_positive-quotes-wallpaper-iphone.jpg"));
+        itemsList.add(new customItems("https://www.wallpapertip.com/wmimgs/68-689781_inspirational-quotes-wallpapers-for-mobile-life-quotes-wallpaper.jpg"));
+        itemsList.add(new customItems("https://www.pixelstalk.net/wp-content/uploads/2016/08/Download-Free-Motivational-Iphone-Wallpaper.jpg"));
+        itemsList.add(new customItems("https://www.wallpapertip.com/wmimgs/196-1967484_self-motivation-quote-motivational-quotes.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/3c/0a/cf/3c0acfebd0272a1c0bc7a552944b32ba.jpg"));
+        itemsList.add(new customItems("https://wallpaperaccess.com/full/2723122.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/0a/0d/9f/0a0d9f6d0b9aa762d26e45184225047e.jpg"));
+        itemsList.add(new customItems("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8ep4owE8Xen9b6W33xYXRCvlUxQVPVbnVng&usqp=CAU"));
+        itemsList.add(new customItems("https://cdn.statically.io/img/wallpaperplay.com/walls/full/c/9/2/182366.jpg"));
+        itemsList.add(new customItems("https://4kwallpaper.wiki/wp-content/uploads/2019/09/119122.jpg"));
+        itemsList.add(new customItems("https://wallpapercave.com/wp/wp4146054.jpg"));
+        itemsList.add(new customItems("https://www.teahub.io/photos/full/40-405640_motivational-quotes-wallpapers-free-download-for-mobile-blue.png"));
+        itemsList.add(new customItems("https://getwallpapers.com/wallpaper/full/1/7/1/1361881-popular-quote-phone-wallpaper-1080x1920-macbook.jpg"));
+        itemsList.add(new customItems("https://www.sammobile.com/wp-content/uploads/2016/09/Your-Future-Is-Created-By-What-You-Do-Today.jpg"));
+        itemsList.add(new customItems("https://wallpaper.dog/large/5534740.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/01/a1/53/01a1530714d5f193353f1190dc5ec9b6.png"));
+        itemsList.add(new customItems("https://www.teahub.io/photos/full/11-112785_self-motivation-positive-quotes-wallpaper-iphone.jpg"));
+        itemsList.add(new customItems("https://wallpaperaccess.com/full/245570.jpg"));
+        itemsList.add(new customItems("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEViqctuNEjZWY0o1e8n16_mko8bp38V7d8A&usqp=CAU"));
+        itemsList.add(new customItems("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeePS2dQQMcUKFZ08QgiLtQHCKq78rdPGGfw&usqp=CAU"));
+        itemsList.add(new customItems("https://cdn.wallpapersafari.com/2/39/nI1z8F.jpg"));
+        itemsList.add(new customItems("https://getwallpapers.com/wallpaper/full/d/a/8/362807.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/66/b2/3a/66b23a8d5fa90d8ced185dbc20b75926.jpg"));
+        itemsList.add(new customItems("https://image.winudf.com/v2/image1/Y29tLm1vdGl2YXRpb24ucXVhbGl0eXdhbGxwYXBlcnNfc2NyZWVuXzNfMTYwNTU0NTIwNF8wMTI/screen-3.jpg?fakeurl=1&type=.jpg"));
+        itemsList.add(new customItems("https://b3-positive.com/wp-content/uploads/2020/08/good-vibes-only-phone-wallpaper.png"));
+        itemsList.add(new customItems("https://www.teahub.io/photos/full/191-1910884_best-quotes-wallpaper-for-android.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/11/6a/ff/116aff43075629e13580ef1bd01883e8.png"));
+        itemsList.add(new customItems("https://lh3.googleusercontent.com/proxy/h1Ee3KwhF4hdV_rXT_nrD6laGWnFhbpxPrIGcGKQ_4L_loqZcxn6d0Fkchna-s41cqUQSKbWBjiVh8TTLwe1xL70a3qmvGOJ68c"));
+        itemsList.add(new customItems("https://i2.wp.com/www.gloryofthesnow.com/wp-content/uploads/2021/02/cute-motivational-quote-wallpaper-backgrounds-for-iPhone-2021-5.jpg?resize=1080%2C1920&ssl=1"));
+        itemsList.add(new customItems("https://www.setaswall.com/wp-content/uploads/2020/02/Inspirational-Quotes-Phone-Wallpaper-1080x1920-113.jpg"));
+        itemsList.add(new customItems("https://wallpaperaccess.com/full/4254529.jpg"));
+        itemsList.add(new customItems("https://lh3.googleusercontent.com/proxy/wg60uC42kyqKpYHc_8HIlgmRB4fPe6-IvIazF3qT97tNIoQTRIZGBUfQEOJCWUGud7C18tI9Dq2r95hcwNwc6Pkn58MoxNFrBdGqvqQaCZ0knpaPleKAUaAUZEpXlXzCwDTC58Ynatf0zA"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/quote_life_meaning_150884_1080x1920.jpg"));
+        itemsList.add(new customItems("https://www.wallpapertip.com/wmimgs/198-1980096_android-iphone-desktop-hd-backgrounds-wallpapers-fitness-motivational.jpg"));
+        itemsList.add(new customItems("https://cdn.statically.io/img/www.gemmaetc.com/wp-content/uploads/2019/08/phone-wallpaper-phone-background-quotes-to-live-by-free-phone-wallpapers-inspiring-quotes-motivating-quotes-girly-quotes-and-inspirational-quotes-2-1.jpg?f=auto"));
+        itemsList.add(new customItems("http://getwallpapers.com/wallpaper/full/5/e/a/1300657-best-nike-quote-iphone-wallpaper-1080x1920-download-free.jpg"));
+        itemsList.add(new customItems("https://wallpapercave.com/wp/wp7845848.jpg"));
+        itemsList.add(new customItems("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsWCKhkrb3dZYHEqbqotsBkmkUOzUQhMx9qQ&usqp=CAU"));
+        itemsList.add(new customItems("https://dogtrainingobedienceschool.com/pic/1867189_full-business-quotes-wallpaper-1080x1920-motivational-quotes-iphone-x-wallpaper.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/11/73/88/117388725e9eac94512214a6ebccc06d.jpg"));
+        itemsList.add(new customItems("https://miro.medium.com/max/2160/1*mOG5MAUsBwaSlviGnLH_bQ.jpeg"));
+        itemsList.add(new customItems("https://b3-positive.com/wp-content/uploads/2020/07/Inspirational-Quotes-Wallpapers-iPhone-Android-11.png"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/0c/44/4e/0c444eba23c75cbea33b4434f0f8c60a.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/17/43/4b/17434b0f9f8b5c930d00e0ee2b48098a.jpg"));
+        itemsList.add(new customItems("https://cdn.statically.io/img/www.gemmaetc.com/wp-content/uploads/2019/08/phone-wallpaper-phone-background-quotes-to-live-by-free-phone-wallpapers-inspiring-quotes-motivating-quotes-girly-quotes-and-inspirational-quotes-9-1.jpg?f=auto"));
+        itemsList.add(new customItems("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCgWOloAWSAMaUh0r3bHSQ_K9WvWt-xBEzjw&usqp=CAU"));
+        itemsList.add(new customItems("https://b3-positive.com/wp-content/uploads/2020/08/Happiness-is-a-choice-phone-wallpaper.png"));
+        itemsList.add(new customItems("https://i0.wp.com/www.gloryofthesnow.com/wp-content/uploads/2021/02/inspirational-quote-wallpapers-for-iPhone-17.jpg?resize=1080%2C1920&ssl=1"));
+        itemsList.add(new customItems("https://cdn.statically.io/img/i.pinimg.com/originals/50/9c/55/509c55098df1e70fd91adf34f6629a60.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/f4/0b/70/f40b708f917f3aba1df7af63036e55ce.jpg"));
+        itemsList.add(new customItems("https://wallpaperaccess.com/full/2895476.jpg"));
+        itemsList.add(new customItems("https://ghantee.com/wp-content/uploads/2021/02/fitness-motivation-quotes-wallpaper-for-iphone.jpg"));
+        itemsList.add(new customItems("https://wallpaperbat.com/img/121053-garyvee-wallpapers-motivational-quotes-wallpaper-study.png"));
+        itemsList.add(new customItems("https://cdn.statically.io/img/i.pinimg.com/originals/ae/4a/7a/ae4a7a98d760b25e0a4acf1ac3003716.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/0a/33/79/0a337968c08af18a2b4c42e9679a9153.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/e3/b4/a0/e3b4a0142fbc50a512cfab3bb930cb35.jpg"));
+        itemsList.add(new customItems("https://wallpaperaccess.com/full/4056712.png"));
+        itemsList.add(new customItems("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpwiMr1U00Axs8QMzIbuVTX9vYXEJHfhFtpQ&usqp=CAU"));
+        itemsList.add(new customItems("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThI5KPpeG_zOYsnQIsOA7Er_m3FeIk3TcPCg&usqp=CAU"));
+        itemsList.add(new customItems("https://cdn.statically.io/img/www.gemmaetc.com/wp-content/uploads/2019/08/phone-wallpaper-phone-background-quotes-to-live-by-free-phone-wallpapers-inspiring-quotes-motivating-quotes-girly-quotes-and-inspiration-29.jpg?f=auto"));
+        itemsList.add(new customItems("https://b3-positive.com/wp-content/uploads/2020/07/Inspirational-Quotes-Wallpapers-iPhone-Android-14.png"));
+        itemsList.add(new customItems("https://wallpaperaccess.com/full/962607.jpg"));
+        itemsList.add(new customItems("https://wallpaper.dog/large/17247492.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/8c/4a/63/8c4a631b813b685ef24f6bc25d9f0467.jpg"));
+        itemsList.add(new customItems("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2lWiQhmjRljZzBw2BKlc6Dtibdj5gp1y4bQ&usqp=CAU"));
+        itemsList.add(new customItems("https://b3-positive.com/wp-content/uploads/2020/07/Life-Quotes-Wallpapers-iPhone-Android-8.png"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/f2/ca/13/f2ca137742ec722770034cfb0ec832e3.jpg"));
+        itemsList.add(new customItems("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN-wC7eY06i5KuIE2GxG3NL9bq4KRALTg8wQ&usqp=CAU"));
+        itemsList.add(new customItems("https://wallpaper.dog/large/963901.jpg"));
+        itemsList.add(new customItems("https://dogtrainingobedienceschool.com/pic/2836031_full-work-hard-quotes-wallpaper-pastel-inspirational-quotes-motivational-happy-sunshine-girl-boss-hustle.jpg"));
+        itemsList.add(new customItems("https://4kwallpaper.wiki/wp-content/uploads/2019/09/119157.jpg"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/text_inscription_motivation_124047_1080x1920.jpg"));
+        itemsList.add(new customItems("https://www.wallpapertip.com/wmimgs/235-2356410_wallpaper-do-more-motivation-phrase.jpg"));
+        itemsList.add(new customItems("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFNWKaTKIwCdPkEkxBpFgwYmcFSg4Qj1D0Tg&usqp=CAU"));
+        itemsList.add(new customItems("https://wallpaperaccess.com/full/1183808.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/25/b5/2c/25b52c2660d8f0f3b9fa60db5e725aae.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/6a/55/40/6a5540fedfc65b6e61e1968ce2e8129a.jpg"));
+        itemsList.add(new customItems("https://dogtrainingobedienceschool.com/pic/7156378_full-daily-motivation-quotes-images-daily-motivation-quotes-for-self-motivating-for-android-apk-download.jpg"));
+        itemsList.add(new customItems("https://wallpaperaccess.com/full/4304133.jpg"));
+        itemsList.add(new customItems("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBESEQ8PDw8SFA8QHCMPDxIaGRUcEhoPGBoeHRgYHRwcIS8lHB44IR0aJj0nLDAxNjU1HSU7QEgzPzA0NTEBDAwMDw8QHhISHj0rJSs/ND4/PT8+MTE3Oz8/Pz8/MT0/PTE/NjQ9NjQ/ND80OD02MTY/MT80Pz02PTExNjQ0Pv/AABEIASwAqAMBIgACEQEDEQH/xAAbAAEBAAMBAQEAAAAAAAAAAAAAAQQFBgMCB//EADsQAAICAgEDAgQEAwQKAwAAAAECAAMEERIFITETQQYUIlEyYXGBI1KRQmJzoRUWJDM0NXKCsbOSk7L/xAAZAQEAAwEBAAAAAAAAAAAAAAAAAQMEAgX/xAAnEQEBAAECBAYCAwAAAAAAAAAAAQIDBBEUUaEFFSExUtFBQiJxsf/aAAwDAQACEQMRAD8A6qIiAlklgJYiAlkEsAJYiAiIECyySwEsCICWIgIiIFiIgYwiIgWIlgIiIFiJYCIiAlgSwERLAREogIERASxEBEsQMWWBEBLEQEsRASxEBESiAliICWIgJYiAiJYCIlgIiIGNESwERLAREsBERACWBLASySwERLAREQEsRASxAgWIiBjRLECSyyQLERAQIlEBLEQLERAsRAgIiWAgRLASyCWAiWIGLAiWAlklgIiIASzV9T+IMTFcV5OQtbsocKVc/QSQD9II8qf6T2w+sY1xqFVoc3Kz1aVxyVG4se47aJ13gZ8sw7OpUq2QGsAbGUXZHZvorYMQ29d+yt2Gz2mN034iw8mz0sfIV7NF+IVx9I1s7Kge4gbWWa3qfWsXFKLk3rWbNlNhtEDW+4BA8jzPvO6xjUVpfdei02ELXYNsrFgWXRUHYIBO4GfE1dHxBhvTZkpkoaKjxschgA3bQ7gEnuPH3nl/rTgembjlKEVhU21cOHILAFCvIbCsQSNHUDcyzXdK63i5fP5a5bPT0X0HGuW+P4gP5T/SbGAliIFiJYCIiBiiWIECxEQEoklgaL4w/wCGT/Hp/wDasx+uLeeo4QxnrSz0rfqdWZOPJNjSkHf7zf5eJXcoS1OSBlsA2w+pGDKexHuBDYiNal7Ju1FZEfbdkcgsNb0fA9oHG2rcD8QjIet7PlV2yKypx9O3XZiTv95v/hxMwVY5vsoaj0l4KiOtg+leO2ZiD289pn29Moc5DMmzlKKcg8n+usBlC9j27M3caPeYvTPhvDxrPVx6ODhSnLnY30HWxpmI9hA13X0vbPwlxjULWpuG7A5r4nhvsvealXdsPpFVHFbsfKGLybb1+rWtiltrxLKfPt51Or6r0LFyyjZVPM1gqn1Oug2uX4WG/A8xk9AxLKa8Z8dPQqbnWillVX0Rv6CCT9TefvuBhdTxnfGFPUMqqu57UGLbWrBReCGrHF2PI8ge2xsfbzPrpmdeXzsXJFRvpRXN1YKq6OrceSnurjj43+kyavhvDSmzGXHHoWnm6FnbbgABgWYlT2HcETI6d0jHx1dKK+IsO7CWZnY619TMSx/r2gYnwf8A8uwP8Nf/ABNzPHDxa6a0pqXjXWOCLsnSjwNkkn957wEsksBLEQEREDGlklgIiBA4jF61kq6O2alnPJbD+TKViz0vUKB1ZNNsDv3BEi9cylsyLDmIwTMbBrw2Svm9PqKAUYafkAx7nY+nvN98O9HWgWvZRWuQ9tjiwKhsNTOSo5jv4Pjc1GP8O5FVl2bUifNDJstRSV1bgWldoW/sN5IJ8Hf3gevVepuM7IobqiYdVaI1YZKG5s3Ln3cb9h/WOq9RvXJrpTqSUVLijKNrJSUstD8dnl4BHfSn9Jk5OPl15mTkU4KZFd6Ig5WohVkDb7FW3+L/ACnq/Rzbn15ORj1NUuOK+LcH4ZXqBtKCPYbHICB5ZPWr26djW1IBnZyrXQo8eq42XG96UKGbvv2ntn9aZ+lWZ9DcbPT5jsCUtB06kMCNhuQ7j2nzndEtysw3WW20VYyhMRq3QOXcfxXPY8RriuvfUwbfh7Jrx+p4VTNbTkD1cZ7HTn67a9VGPbyQGB0B3PvAzuhdQuOVdiPkplola5HrqiKyOzEek/A8SdfUPB0DuRuvuOorTofJb+Saztr/AEgV5hd/9I46+5lwenX4b5NeJSjY9qm+hOSqUy9aNZ35QnRBH4e4mD/qY/ynD53J+YP+0Feaej89+LnrhvXP33uBkdRTOGbRj19SdK8kWWqPQxzwVOJVQSu2H1a2e/aelvXbKD1Z7N2LitWmPXpRt7K00uwN93byd63Mz5XIsyen5FiBTVVYmSAynja4TsNfiG1buJjX9Ae49WSw8Ey2R8dwdsGrReL6B32dR27bgfR6f1QL6o6ghyNc/l/ST5UnX4OX49b7ct7mBmfFVpXpWTj0s6ZS2G/HGi2q1BfgTrbKVfX38e/bP+b6sV9H5KgXEcTl+sPQ5a/GE489778dfvJT0BqbejLT3pwRaLmJAYtZWRy177ck9vG4Htk9ZDt0t8W0NRlWFXIAPKsVs3E7GwQy9/BBGpvpzOT8NFc3GysZuNPqG7Jo7cPVKMnqoPZu4DAeex9p08AIiWAiIgY0REDVZ/X8Wiz0bXcWcQ5Va7X+gkgHaKQPBntndYx6BWbbNG3vVWFdrGGt9kUFv8u002RVkt1PI+WvSphjpzLoXBHN9aHIant07S9UzReR6z11/Kk6G8cKfUCf9+yR+kDbdN6tRk8xQ+3r7WIysti78clYAgfnqY2D8SYd1gprv3Y2wqsjoGKdmCl1AYj7AzEzirdVwBVo3IlhyyNbGMVHpq//AH6IH6znPh02WNgY95RMVbbMvFYAl7L67LAayxOlI5FtAdxA7jqnVacVFfIZlRt6IR38DZJ4KdDXuZ443X8Wyl8gXcaK9c3dXRfq/DrkBy3sa1ve56fEP/BZ3+DZ/wCtpzuSVFPw89+vlU4G0t+AWmjVLN7Acvc/cQN5h/EeJa61LYyvZ3qDpYnP/pLqAx/Id5sGyUFiUFv4jq1ir91QqG//AEv+f2mk+OHr+SdGO7nKjEAP8Q5PMcCnvvf29tzU/ELWfOvl1sS3SaktsQa0y2M5uH/1jY/SB2Ryk9QUch6hQ28ffgGC7/qdf1mFndfxaLPRd2a0Dm1aI7uq/dginj+85rplzv1LF6gxb0+oC3HoU9guNWFao68gtwdv3E2/we6azEYj5tch2ygf94duSjd+5Thx0fH2gbOnrGM+O+Wlytj1gs7gNtQo2wZdcgwHsRufPS+t4uUWXHt5MgDMjK6PxPhuLgEr+Y7Tmeoujt8QPQQaflwtzL/uzmBH5aPgsF4g69/MyfhZ7bcstltWuRi0rVRUisA2K/BvW5Mdv3XjoaCn9YG36Z8TYWSy10X7dwTWrJYvID8XEsoDa+wnt1Dr2NQ4qsdjcw5itEd7OH8xVASo/WcP8GvZYOk0ZLImPWHy8IqG522qzqyFidKV5FuIHcanUfCrKLepo+hl/MM9oOvUNB16JHvw4619u8DPX4gxDQ2ULwaEYJY+m2jkhdOuuSdyPIHmbC7JrratXYBrW9Osfd+LNr+imcx8pXk9R6hWmjj2Yy0ZrLrRyizcO48sE/p2mg/2rLrJPJb+hp/e1ZnJZsn25A11/wBbP6h+htnVi5cYt/HZTcq6J/hqQCxPgDZA7+Zkic38KOclsnqhUgZLCrGU+VxKuy/ptuTH9p0kBEsQMWIgQPJcVA7XBB6rqEZ/copJA/TZP9Z5dQ6Zj5KhMmlLFXuvIdwfyI7j9plywMPp3TMfGUpjUpWrd24juT7bJ7n95D0nH4JV6KenW/rVr3+m3kW5qfIbZJ3+czpRA876lsR0dQyOCjqfBRhog/loz4OJWaxjmtDSFFfpkApwA0F0fbQE5M9Uyz06i/1XHK9kyr0RXsTFWxxyVQNf2VG9HQ7zoPh9+dPMZgy0Zia7dKGCdvofj2LA776B7+IEwPh3Cof1aMWtbB+FtEsu/PEsTx8nxrzM1MOtWudUUPfr1m934rxXf7dpz2su/M6jXVnvQmMa1qT06nr+upWPLkNkb37+8i/EGQ2PXWqVr1B7z01vJqS5Nl7NHRK8ByA/MeYHQ/IVaoX01442jQP5OK8Rr/t7TH6l0LEyWDZOOjsBoMQQ2vtyUgkflNV1GjNxKmy0znyPQHqX02JWEete78Cigo2tkefE9W6jY+XciOfQOGMqtdAadnYB9+d6A94G4Tp1C0nGWlFx2BVq1ACFW/END7z6+Rq51WemvOlSlT9+SoRorv3HbwZofhPr7311VZa8ctqxdW3bjdSRsOuu3L+ZfY9/HjFwus5VmJ0uquwfO54cteygiuuvZd+I0C2ioA8d4HRr0fGCVUihBXQ3qUqN/RYCSGU+Qdk/1nz1PomLlFWycZLGXsrEEOF+3JdHX5bmBVj30X1A9UFik6vpuFQcqw+lkKhSG320dg7/ACnQQPDBwqqEFVFaV1juEUADfufzP5z7qx0Q2MiAG1udn95+Krs/sqj9p6SwPPGx0rRKq1CoihEUeAqjQE9IlgIiIGLLAlgIiWAlEkxbOoVpfXiuxW25WeoEHiwT8QB8FgO+vtA0uD0/OxsXHWg1myux7LaSwCWVO7soD8SVYclP/mZnw90+ys5V1yoj5Ti01IeSIAoX8WhtjoknUyD1vGHzLG0KmIQmQ5BCByPwhv7TdwNDvsgeTMej4mxXZEb1q/VPCl7KrER2PgKzADZ9t63AxHxeoVZWfbjVY7LlFGrex3AQpWE7oqkkb37iU/DTrjIld4+dS05wvZfofLbfPko/slTx/Ia+03a5tZvbG2fWVBeRo69NmKg7++we0x8jrVFa5TuzBcMhcg8SdFgCNfzdmHiBrM6jqWXW2LbVRj02fRkWrYbHao/iVF4DiT42x7AmZLdJsGXbcgUUtijDQb7h1diBr7aI7zM6Z1ejJNi1M3OvRet0ZHAbweLAHX5z56p1zHxXRby/JwzrwR2+hdcmPEHQGxAwqvh/ngYuNa3DIxkX07kP1V3quuSn3H3HuJiY/wAP5FeL0/02rGb0/kE5E+k6OSGQkdwGXiQddiB+25zut49NdN7OzV5BCUlFZy5ZSy6CjZ7Az5HX8f0HyH9VK0YVnnXYrl21xCqRybZIHYQNVZ0m/Lyce/KxMXHXHcWsysLMix6+9acuA4pvuR33oCdVNKPiXH4PZxyP4bCuxPRt9VGZSwLLx2F0N78TJ6P1mnLVmoFnEAMGdHRWDb0VLD6vHt+UDYyxECxEsBERAxZREQEsRATRfGWPyw7L1Yrdif7Vj2D8S2J3/cEbBB7d5vp530pYjI6B0ccXUjalT5BH2gclnYNeLi9LLbONXct+Y7d9u6t/Ff7jmwPfx2+02PxlkUHAyEdkc3rwx0BDM97f7vgB+I8tHt9pvjWpXgVBTXAqQCvHWta+2pg4fQ8Ol/VpxaUs9nVFDDfnX8v7QNXjuU6oi3MBY+Gqgnw9iWMXAPue+9faajqlivi/EdiENWzqgcd1LIlYYA++jOyz+nUZChcilLFU7UOoOj9x9pR06gU/L+hWKNaNQVQmt7/D4894Gg+GvUfLy7MxlGdUi43popWv5XkXR1JYlwxPn21qPiJbD1DCWm9KHNNw9RlDKASm+xYd50ZxazYtxRfVVeC2aHMIe5Xf2331PLO6VjZBQ5GPXaU7JzUNoHzrf6CBxIsZ8Lo6U2JS1OV8slwAesmtbF9RQxHJTrfn3m+zaVOMtXUM/wBRrLlGPkV1rWa7+xrH0llB2pO2++vtNzf0rGsrSmzHqamvvXWUXgpAIGl1odif6z4q6NirU9C41Ioc8nr4LwZu2iR432Hf8hA1fS8+8t1DCyLUvbGRWF6AKWWxG+l1HZXHH28gzL+D/wDl2B/hL/4mdhdOooQ1UUpXW3dlVQASRok/c67d5749CVotdaKiIOKIBpQo8AD2geksksBLEQEREDGlklgIiWAiIgJzPxBReMnE9POya0yrPSatTXwVVrZtrtSd7X335M6eazquA9tuDYhXjjWG19k7KGtl7du52wga1FyMm+7FXLtqxsJUpssXh8xbeyBixcqQoAI8L3JM9sO27Gy6sO7Ia+nKRnx3cL6yPXxLqxUAOpDbB1v2n3k9PyasmzKwTU3zAUZVFjOql0HFXV1B4trQII0dfefXT+nZD5Izc1qw9aGrGor5GtFcgu7MwBZzoDsAABA0PSXzz06vqSZ9j2qrXvRYqNS6Vs21BChlOl878zcdb6s74mOMLtk9RCri7OiodOTuftxTff2Oprun9C6iMNOmvZjVY4U122oXe9qmYllUFQq7BI2dzYW/DQtyOVxKY2NWuPgJXY6uqAfWzFdaJ0q62eywPjI6pfbg4/UMbkHoPqZWP/OqbW+vR8MCGIP5fnMn4dzbMuy/NDuuE38HDrI0HVT9dzDzstsD7AGfXRuivivlpW28S/VtYZ2axcgjjZsnyDpW3ve9zL+HsF8fExsewqXqQI5UkrsfYkCBsoiIFiJYCIlEBERAxoiIFiIgIiY3VbGTHvdDp0RmU/ZgOxnWGFzymM/KMrwlrKifn+N1fNsJVcnRCs/1cFGlBJ7kaHj3mTRmZz220rlfxKm4Ecdg/WELDS+ASD+k9TLwnUx98oyTeY32ldxLOMVuoFxT80BceW0IPZV5DZbhx7lT7+4/PXz6+bxV/nl4NpQ3EkB21wUgISD3B17fuN8eWZfOd/pPNTpXaiWcVZZ1FGqR8pV9UMQ204gKiu2zx0CA2v2+xBP3e2eiF7M1VVSwY6J/C/DYATbDZXuPAZfuJHlt9P5z1/v6OanxrspZxpXqYJByQB3VWJTi9iqWZQePn6WGzobVu/YzHozM573x/m+NiHidjtyDBT/Z2PPvJnhtvtnO5zWM/Fd1LPzvM6vm1WNU2USy62QF9wDogrsHvoj2IM7Xodz2Y1DuxZ2XbN7k7Mq3Owz0MJnbLL0WaW4x1MrjJfRnyxEwryWIgIiIGNLJLARAiAE8szHFldlROg6lCfcAjW57RJxyuNlnvEWcZwrmV+D0G9ZLjY0dKPB8jz4nofhYnlvMuPLu397tx79+/YkfoZ0cTbfEdzf27RTy2l0c6fhYlQpzbyo8L/ZHbj2G9DsSP0Op9D4abYb57I5AFQdnYVjthvl4JA/pOhlnPP7j5donl9Lo5pPhPiVK5dwK91I7FToL279vpAH6ACfa/DLA7XOyA3nkCQdne+/L8z/Uzooi7/cX9u0OX0ujmf8AVEa4/N28fGtdtHlvtv8AvN/8j9zPs/CpJJ+du2dbPueJ2u+/cg9/17zpJY8w3Py7RHLaXT/XLN8Hq2uWTY3EBV2AdKPAGz2H5Toen4opqSkMWCDiGPYnvuZEsr1d1rauMxzvGR3ho4YXjjOBESzOsIiICJYgY0REBLJLAREsBLJLASxEBLJLASxECxEQEsRAREsBEoiBixEQLERAsRLAREsBESwERLASySwERLARAiAliUQKJYEQMOWSWAlklgJYiAliYlOej8Nb4v3Q9jsbA76/CfqXsfuPftAy5RMX56v6dFjy0F0r6OyB27fdhv7T5HUaj+BuZ0SoAbvoA+SNa0R38d4GZLMKrqNbAsSV12PuoBCkEsuwB9QGzrvv7T0GdXzRPq2+wv0sDyHEkcSNjswO9a1swMoRMdsxBvbN23v6X1pdhjvXcDXc+B+8JmVs3AFuW9fgcDeyPJGvKsP1EDJERAgJRJLACfQkE+hARKIgYcRAgWIlgJZBLACYf+jq+TMOQ5aBAJ12II1/L4HjXgb3oazJYGIuBWBobAGgNE9gCCNfy91Xx9hH+j00B9Wh4GzodtdvsPt9vaZcogYvyFf5n77778aB3+Idh2O/En+j02D9Wx4Ozy9vfz/ZX9gBMuWBi/IJrX1aPts67+R+h2djwffc+kw0BBBbewfJ8glh/mzf1mRLARKJIFECJRAolgSiBRECIH//2Q=="));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/e1/62/b3/e162b38b12347f22c8599dace9f29be0.png"));
+        itemsList.add(new customItems("https://i1.wp.com/getwallpapers.com/wallpaper/full/a/8/f/719365-bible-verse-pictures-wallpaper-1080x1920-macbook.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/a3/a8/9e/a3a89efbafa9b699e65a4ecc0675abb7.jpg"));
+        itemsList.add(new customItems("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbsjVqWmrUpoSQu5lh-Z7Q-eVN380Y9Wwpjg&usqp=CAU"));
+        itemsList.add(new customItems("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCM5_aHENM9TMHfhXN81q1DIuZVuks8njB3w&usqp=CAU"));
+        itemsList.add(new customItems("https://wallpaperaccess.com/full/2410160.jpg"));
+        itemsList.add(new customItems("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT4w4IRNxUnjH00vm5LfgyN5MvrZC-9e0c4g&usqp=CAU"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/bf/39/a6/bf39a61a8db61fa181d08eb1102b030c.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/3f/c9/7b/3fc97b01726cae886ada85e23556a050.png"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/50/29/60/5029608feab3b6c3c7a0e223eacbd619.png"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/61/25/6b/61256b3de3c8e2efc7a02e5ba523fc32.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/24/90/f3/2490f3347dcf25de203c7ff7d536fe3a.png"));
+        itemsList.add(new customItems("https://wallpaperaccess.com/full/4960257.png"));
+        itemsList.add(new customItems("https://wallpaperaccess.com/full/2410159.jpg"));
+        itemsList.add(new customItems("https://wallpaperaccess.com/full/3857639.png"));
+        itemsList.add(new customItems("https://garyveewallpapers.com/wp-content/uploads/2018/03/Its-a-mindset-game-garyvaynerchuck-quote-download.png"));
+        itemsList.add(new customItems("https://cdn.wallpapersafari.com/0/3/o6Sanr.jpg"));
+        itemsList.add(new customItems("https://wallpaperaccess.com/full/270645.png"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/e2/c8/36/e2c8366d23c65d4554dabae1a70a587d.jpg"));
+        itemsList.add(new customItems("https://wallpaperaccess.com/full/1355627.jpg"));
+        itemsList.add(new customItems("https://cdn.statically.io/img/cdn.hipwallpaper.com/i/28/45/aYU48b.jpg"));
+        itemsList.add(new customItems("https://stepupgoals.com/wp-content/uploads/2020/01/Motivational-Wallpaper-4.jpg"));
+        itemsList.add(new customItems("https://1.bp.blogspot.com/-OFXyI2DtIcE/X1IEAUFifVI/AAAAAAAAL6U/pfT9lK9ZKxMvnJN7aieSCBc0IyhxUQu3ACLcBGAsYHQ/s1920/motivational%2Bwallpaper%2Bfor%2Btablet%2B%25286%2529.png"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/motivation_inscription_button_150726_1080x1920.jpg"));
+        itemsList.add(new customItems("https://wallpapercave.com/wp/wp6366168.jpg"));
+        itemsList.add(new customItems("https://stepupgoals.com/wp-content/uploads/2020/01/Motivational-Wallpaper-7.jpg"));
+        itemsList.add(new customItems("https://www.teahub.io/photos/full/270-2705136_garyvee-wallpaper-motivation.jpg"));
+        itemsList.add(new customItems("https://cdn.wallpapersafari.com/13/74/i0qJQY.png"));
+        itemsList.add(new customItems("https://www.desktopbackground.org/download/1080x1920/2014/08/13/808730_desktop-phone-inspirational-wallpapers-a-cup-of-thuy_12067x7542_h.jpg"));
+        itemsList.add(new customItems("https://www.wallpaperkiss.com/wimg/b/126-1260908_big.png"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/neon_inscription_motivation_123238_1080x1920.jpg"));
+        itemsList.add(new customItems("https://motivationrich.com/wp-content/uploads/2020/05/Motivational-wallpapers-9-min.jpg"));
+        itemsList.add(new customItems("https://www.mwallpapers.com/photos/celebrities/aesthetic/motivation-aesthetic-android-iphone-desktop-hd-backgrounds-wallpapers-1080p-4khd-wallpapers-desktop-background-android-iphone-1080p-4k-ywwbm.jpg?v=1615211065"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/59/c2/5c/59c25c071d394b86f67da4c9d96b3a7b.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/42/c9/48/42c948e2da81feda17b5bd424048d1bb.png"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/fire_motivation_inspiration_136279_1080x1920.jpg"));
+        itemsList.add(new customItems("https://images.hdqwalls.com/download/motivational-msg-3-k0-1080x1920.jpg"));
+        itemsList.add(new customItems("https://motivationrich.com/wp-content/uploads/2020/05/Motivational-wallpapers-14-min.jpg"));
+        itemsList.add(new customItems("https://www.mwallpapers.com/photos/celebrities/aesthetic/motivation-aesthetic-android-iphone-desktop-hd-backgrounds-wallpapers-1080p-4khd-wallpapers-desktop-background-android-iphone-1080p-4k-wjpwq.jpg?v=1615211970"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/inscription_motivation_text_dark_background_119959_1080x1920.jpg"));
+        itemsList.add(new customItems("https://stepupgoals.com/wp-content/uploads/2020/01/Motivational-Wallpaper-3.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/90/4a/ce/904aceecf0a14e1c1cd28e0657b86a5c.jpg"));
+        itemsList.add(new customItems("https://wallpaper.dog/large/963897.jpg"));
+        itemsList.add(new customItems("https://dogtrainingobedienceschool.com/pic/3142095_full-inspirational-hard-work-quotes-wallpaper-hd-dedication-and-hard-work-vive-con-style.jpg"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/words_motivation_inscription_163205_1080x1920.jpg"));
+        itemsList.add(new customItems("https://i.imgur.com/9wUt6JJ.jpg"));
+        itemsList.add(new customItems("https://i2.wp.com/i.pinimg.com/originals/7c/6e/9a/7c6e9a81bd10b32fe2d7a364947dd28b.jpg"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/happy_motivation_mood_150027_1080x1920.jpg"));
+        itemsList.add(new customItems("https://i1.wp.com/pavbca.com/walldb/original/5/b/a/730463.jpg"));
+        itemsList.add(new customItems("https://wallpaperaccess.com/full/4269584.jpg"));
+        itemsList.add(new customItems("https://i.pinimg.com/originals/06/28/22/0628222189e9a6ef7b6f32c53dd5f361.jpg"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/travel_motivation_inscription_168053_1080x1920.jpg"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/quote_motivation_phrase_143265_1080x1920.jpg"));
+        itemsList.add(new customItems("https://images.wallpaperscraft.com/image/friends_friendship_motivation_161774_1080x1920.jpg"));
+
+        recyclerViewAdapter = new RecyclerViewAdapter(itemsList,this);
+        binding.recyclerview.setAdapter(recyclerViewAdapter);
+
+    }
+}

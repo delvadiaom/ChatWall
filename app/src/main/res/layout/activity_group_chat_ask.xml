@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupChatAskActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </WebView>
+
+
+        <Button
+            android:id="@+id/startchatting"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="-90dp"
+            android:text="Start Chatting"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:background="@drawable/textboxemail"/>
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="-55dp"
+            android:layout_marginLeft="-90dp"
+            android:text="Cancel"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:background="@drawable/textboxemail"/>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

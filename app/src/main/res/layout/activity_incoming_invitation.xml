@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IncomingInvitationActivity"
+    android:background="@drawable/background_meeting_invitation">
+
+    <ImageView
+        android:id="@+id/imageMeetingType"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_baseline_videocam_24"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/textIconMeetingInvitation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="Incoming Meeting Invitation"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/imageMeetingType"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textFirstChar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/meeting_user_icon"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/textUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/accept"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/back_accept_invitation"
+        android:src="@drawable/ic_baseline_done_24"
+        android:contentDescription="@string/app_name"
+        android:padding="8dp"
+        android:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="?selectableItemBackground"/>
+
+    <ImageView
+        android:id="@+id/reject"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/back_reject_invitation"
+        android:src="@drawable/ic_baseline_clear_24"
+        android:contentDescription="@string/app_name"
+        android:padding="8dp"
+        android:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="?selectableItemBackground"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

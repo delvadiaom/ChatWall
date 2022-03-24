@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "1018269423051",
+    "firebase_url": "https://chatwallllll-default-rtdb.firebaseio.com",
+    "project_id": "chatwallllll",
+    "storage_bucket": "chatwallllll.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1018269423051:android:7dab777fe0756f21e9d24e",
+        "android_client_info": {
+          "package_name": "com.developerom.chatgloballllllly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1018269423051-1hafufummvfah73en3jhicakl8aub7o3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.developerom.chatgloballllllly",
+            "certificate_hash": "31e9de4b46a0015317a2b558f97dda4455fb8539"
+          }
+        },
+        {
+          "client_id": "1018269423051-56lbkuj6v6je81dtotb8uptr69nunlo3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.developerom.chatgloballllllly",
+            "certificate_hash": "b9e5ce4080a3f50c9332b861617f2de27a782ad9"
+          }
+        },
+        {
+          "client_id": "1018269423051-vijeh5oil7jfp4jfvji6t3u9h6crme20.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr4SH0EJM_joKzmiND6KUSkKSmgTXQUa0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1018269423051-vijeh5oil7jfp4jfvji6t3u9h6crme20.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

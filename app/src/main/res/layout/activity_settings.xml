@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/privacypolicy"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Privacy Policy"
+            android:fontFamily="@font/banger"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="?selectableItemBackground"/>
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/privacy2"
+            android:layout_marginTop="-60dp"
+            android:layout_marginLeft="5dp"/>
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/aboutus"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="About Us"
+            android:fontFamily="@font/banger"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="?selectableItemBackground"/>
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/contactme2"
+            android:layout_marginTop="-60dp"
+            android:layout_marginLeft="5dp"/>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/contactus"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Contact Us"
+            android:fontFamily="@font/banger"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="?selectableItemBackground"/>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/mail"
+            android:layout_marginTop="-60dp"
+            android:layout_marginLeft="7dp"/>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/shareapp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Share The App"
+            android:fontFamily="@font/banger"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="?selectableItemBackground"/>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/shareicon"
+            android:layout_marginTop="-60dp"
+            android:layout_marginLeft="9dp"/>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="10dp"/>
+
+
+
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            app:layout_constraintTop_toBottomOf="@+id/statusList"
+            android:layout_marginTop="50dp"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-2746280336073356/6041062220"
+            tools:ignore="MissingClass">
+        </com.google.android.gms.ads.AdView>
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>
