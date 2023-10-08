@@ -25,6 +25,23 @@ Messaging Feature:
 • Implement chat groups or group messaging.
 
 ![Screenshot (7)](https://github.com/delvadiaom/ChatWall/assets/102248079/d1ddc5bc-317d-4af1-9d5a-f5ab9851c020)
+
+Wallpaper Service:
+
+• Users can explore a wide range of wallpapers categorized by themes, such as nature, abstract, animals, technology, and more.
+
+• Organize wallpapers into easy-to-browse categories for user convenience.
+
+• Users can set any wallpaper as their home screen background.
+
+• Allow users to set wallpapers as lock screen backgrounds.
+
+• Provide a download option for users to save wallpapers to their device's gallery.
+
+• Enable users to share their favorite wallpapers on popular social media platforms like Facebook, Instagram, Twitter, etc.
+
+• Implement an easy-to-use sharing feature with customizable captions and hashtags.
+
 ![Screenshot (8)](https://github.com/delvadiaom/ChatWall/assets/102248079/14512982-b468-43c1-91d0-d523edf8856d)
 
 
